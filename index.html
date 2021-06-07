@@ -12,6 +12,15 @@
 </head>
 
 <body>
+  <div class="disclaimer-container">
+    <div class="disclaimer">
+      <button class="btn-disclaimer"><i class="fas fa-times-circle fa-2x"></i></button>
+      <h2>** DISCLAIMER **</h2>
+      <h3>This site is a recreation of an old Apple home page.</h3>
+      <p>This site was made purely for a self-learning exercise. There isn't any malicious intent.</p>
+    </div>
+  </div>
+
   <section>
     <article class="hero">
       <a href="#"></a>
@@ -93,6 +102,21 @@
       </ul>
     </div>
   </footer>
+
+   <!-- SCRIPT TO CLOSE THE DISCLAIMER MESSAGE-->
+
+   <script>
+    const disclaimer = document.querySelector('.disclaimer-container');
+    const btn_close = document.querySelector('.btn-disclaimer')
+    
+    function close() {
+      disclaimer.classList.add('close');
+    }
+
+    btn_close.addEventListener('click', close);
+
+  </script>
+
 </body>
 
 </html>
